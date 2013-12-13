@@ -1,0 +1,72 @@
+Testsuite: pixel.jenkins.PixelJenkinsControllerTests
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec
+------------- Standard Output ---------------
+--Output from testSomething--
+Failure: testSomething(pixel.jenkins.PixelJenkinsControllerTests)
+junit.framework.AssertionFailedError: Not implemented!
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.TestCase.fail(TestCase.java:227)
+	at pixel.jenkins.PixelJenkinsControllerTests.testSomething(PixelJenkinsControllerTests.groovy:15)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runners.ParentRunner$run.call(Unknown Source)
+	at org.codehaus.griffon.test.junit4.JUnit4GriffonTestType.doRun(JUnit4GriffonTestType.groovy:111)
+	at org.codehaus.griffon.test.support.GriffonTestTypeSupport.run(GriffonTestTypeSupport.groovy:117)
+	at org.codehaus.griffon.test.GriffonTestType$run.call(Unknown Source)
+	at _GriffonTest$_run_closure5.doCall(_GriffonTest.groovy:305)
+	at _GriffonTest$_run_closure3.doCall(_GriffonTest.groovy:255)
+	at _GriffonTest$_run_closure2_closure25.doCall(_GriffonTest.groovy:215)
+	at _GriffonTest$_run_closure2.doCall(_GriffonTest.groovy:202)
+	at TestApp$_run_closure1.doCall(TestApp:80)
+	at org.codehaus.griffon.cli.GriffonScriptRunner.executeWithGantInstance(GriffonScriptRunner.java:648)
+	at org.codehaus.griffon.cli.shell.GantAwareAction.doExecute(GantAwareAction.java:140)
+	at org.codehaus.griffon.cli.shell.AbstractGriffonShellCommand.execute(AbstractGriffonShellCommand.java:56)
+	at org.codehaus.griffon.cli.shell.support.GriffonCommandFactory.execute(GriffonCommandFactory.java:65)
+	at org.apache.felix.gogo.runtime.Closure.executeCmd(Closure.java:477)
+	at org.apache.felix.gogo.runtime.Closure.executeStatement(Closure.java:403)
+	at org.apache.felix.gogo.runtime.Pipe.run(Pipe.java:108)
+	at org.apache.felix.gogo.runtime.Closure.execute(Closure.java:183)
+	at org.apache.felix.gogo.runtime.Closure.execute(Closure.java:120)
+	at org.apache.felix.gogo.runtime.CommandSessionImpl.execute(CommandSessionImpl.java:89)
+	at org.apache.karaf.shell.console.jline.Console.run(Console.java:221)
+	at org.codehaus.griffon.cli.shell.KarafMain.run(KarafMain.java:187)
+	at org.codehaus.griffon.cli.shell.KarafMain.run(KarafMain.java:81)
+	at org.codehaus.griffon.cli.shell.GriffonShell.main(GriffonShell.java:61)
+	at org.codehaus.griffon.cli.support.GriffonStarter.rootLoader(GriffonStarter.java:198)
+	at org.codehaus.griffon.cli.support.GriffonStarter.main(GriffonStarter.java:223)
+
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testSomething--
+------------- ---------------- ---------------
+
+Testcase: testSomething took 0.055 sec
+	FAILED
+junit.framework.AssertionFailedError: Not implemented!
+junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Not implemented!
+	at pixel.jenkins.PixelJenkinsControllerTests.testSomething(PixelJenkinsControllerTests.groovy:15)
+	at org.codehaus.griffon.test.junit4.JUnit4GriffonTestType.doRun(JUnit4GriffonTestType.groovy:111)
+	at org.codehaus.griffon.test.support.GriffonTestTypeSupport.run(GriffonTestTypeSupport.groovy:117)
+	at org.codehaus.griffon.test.GriffonTestType$run.call(Unknown Source)
+
