@@ -1,6 +1,21 @@
 package pixel.jenkins
 
-application(title: 'pixel-jenkins',
+
+actions {
+  action(id: 'openAction',
+      name: 'Open',
+      mnemonic: 'O',
+      accelerator: shortcut('O'),
+      closure: controller.openFile)
+  action(id: 'quitAction',
+      name: 'Quit',
+      mnemonic: 'Q',
+      accelerator: shortcut('Q'),
+      closure: controller.quit)
+}
+
+fileChooserWindow = fileChooser()
+fileViewerWindow = application(title: 'pixel-jenkins',
   preferredSize: [320, 240],
   pack: true,
   //location: [50,50],
@@ -9,6 +24,13 @@ application(title: 'pixel-jenkins',
   iconImages: [imageIcon('/griffon-icon-48x48.png').image,
                imageIcon('/griffon-icon-32x32.png').image,
                imageIcon('/griffon-icon-16x16.png').image]) {
-    // add content here
-    label('Content Goes Here') // delete me
+    menuBar {
+      menu('File'){
+        menuItem openAction
+        separator()
+        menuItem quitAction
+      }
+    }
+    borderLayout()
+    tabbedPane(id: 'tabGroup', constraints: CENTER)
 }

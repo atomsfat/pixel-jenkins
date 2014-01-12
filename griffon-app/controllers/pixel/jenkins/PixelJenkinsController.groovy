@@ -1,5 +1,7 @@
 package pixel.jenkins
 
+import javax.swing.JFileChooser
+
 class PixelJenkinsController {
     // these will be injected by Griffon
     def model
@@ -21,4 +23,17 @@ class PixelJenkinsController {
     def action = { evt = null ->
     }
     */
+    def openFile = {
+      def openResult = view.fileChooserWindow.showOpenDialog()
+      if(JFileChooser.APPROVE_OPTION == openResult){
+        File file = new File(view.fileChooserWindow.selectedFile.toString())
+        String mvcId = file.path + System.currentTimeMillis()
+        createMVCGroup('FilePanel', mvcId, [file:file, tabGroup: view.tabGroup, tabName:file.name, mvcId:mvcId])
+
+      }
+
+    }
+  def quit = {
+    app.shutdown()
+  }
 }

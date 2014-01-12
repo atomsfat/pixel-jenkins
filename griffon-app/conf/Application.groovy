@@ -9,6 +9,13 @@ application {
     //frameClass = 'javax.swing.JFrame'
 }
 mvcGroups {
+    // MVC Group for "filePanel"
+    'FilePanel' {
+        model      = 'pixel.jenkins.FilePanelModel'
+        view       = 'pixel.jenkins.FilePanelView'
+        controller = 'pixel.jenkins.FilePanelController'
+    }
+
     // MVC Group for "pixel-jenkins"
     'pixel-jenkins' {
         model      = 'pixel.jenkins.PixelJenkinsModel'
